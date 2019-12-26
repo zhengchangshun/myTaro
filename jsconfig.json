@@ -1,0 +1,12 @@
+/*配置alias后，vscode对应的文件跟踪配置*/
+
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@": ["./src"],
+      "@/package": ["./package.json"],
+      "@/project": ["./project.config.json"]
+    }
+  }
+}
