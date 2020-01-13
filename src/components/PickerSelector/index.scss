@@ -1,0 +1,39 @@
+.picker-wrap {
+    display: flex;
+    height: 92px;
+    align-items: center;
+    background: #fff;
+}
+
+.picker-title {
+    font-size: 32px;
+    line-height: 1;
+    width: 180px;
+}
+
+.picker {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.picker-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.picker-content {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.picker-placeholder {
+    font-size: 32px;
+    line-height: 1;
+    color: #B9BEC3;
+}
+
+.picker-arrow {
+    width: 36px;
+    height: 36px;
+}

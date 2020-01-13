@@ -1,0 +1,26 @@
+.detail-wrap {
+    padding: 48px 40px;
+    .detail-row {
+        display: flex;
+        line-height: 32px;
+        font-size: 32px;
+        .label {
+            max-width: 260px;
+            text-align: left;
+            color: #6E7382;
+        }
+        .value {
+            flex: 1;
+            text-align: right;
+            color: #1E283C;
+            white-space: normal;
+            word-break: break-all;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+    }
+}
+
