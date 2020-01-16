@@ -23,18 +23,18 @@ const defaultOpts = {
  * @returns {Promise}
  */
 export function request(url, options) {
-    //url根据环境参数配置域名；拼接appStoken参数
-    url = stitchUrlParam(getfulllUrl(url), parseParamStr({ app_stoken: getAppStoken() }));
-    options = Object.assign({}, defaultOpts, options);
-    //添加自定义头
-    const header = Object.assign({}, options.headers, { "IDENTIFY": "MINI_APP_IDENTIFY" });
-    const requestOptions = {
-        url,
-        header,
-        data: options.body,
-        method: (options.method || 'POST').toUpperCase(),
-    };
-    return Taro.request(requestOptions);
+  //url根据环境参数配置域名；拼接appStoken参数
+  url = stitchUrlParam(getfulllUrl(url), parseParamStr({ app_stoken: getAppStoken() }));
+  options = Object.assign({}, defaultOpts, options);
+  //添加自定义头
+  const header = Object.assign({}, options.headers);
+  const requestOptions = {
+    url,
+    header,
+    data: options.body,
+    method: (options.method ).toUpperCase(),
+  };
+  return Taro.request(requestOptions);
 }
 
 /**
